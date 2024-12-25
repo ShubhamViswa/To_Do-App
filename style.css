@@ -1,0 +1,182 @@
+ /* Center the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main container */
+.container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field */
+#todo-input {
+    padding: 12px 15px;
+    width: 250px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#todo-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Add Task Button */
+#add-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+#add-btn:active {
+    transform: scale(0.98);
+}
+
+/* To-Do List Container */
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading Styling */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* To-Do List */
+ul#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Styling for each list item */
+ul#todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.3);
+    transition: transform 0.2s ease;
+}
+
+/* Task Text Styling */
+span {
+    font-size: 18px;
+    color: #495057;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+/* Strikethrough text when task is checked */
+span.checked {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Delete Button Styling */
+button.delete-btn {
+    padding: 8px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Flex container for input and button */
+#todo-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+} 
+
+/* Flex container for each to-do item */
+.list {
+    display: flex;
+    align-items: center;
+     /* Vertically center elements */ 
+    justify-content: space-between;
+     /* Space between checkbox, task text, and button */
+}
+
+/* Correct spacing for the checkbox */
+.list input[type="checkbox"] {
+    margin-right: 15px; /* Space between checkbox and task text */
+}
+
+/* Adjust delete button */
+.delete-btn {
+    margin-left: auto; /* Space between task text and delete button */
+}
